@@ -6,7 +6,7 @@ class Hole {
         this.size = random(30, 50);
         this.rotation = random(0, PI);
         this.img = img;
-        this.img.resize(this.size, this.size);
+        // this.img.resize(this.size, this.size);
     }
 
     draw() {

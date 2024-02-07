@@ -8,7 +8,7 @@ function displayFPS() {
     pop();
 }
 
-const nBirds = 50;
+const nBirds = 30;
 let hungryBirds = new Array();
 let eatenFragments = new Object();
 let mouseShake;
@@ -27,7 +27,7 @@ let holeImg;
 let handImg;
 
 function preload() {
-    holeImg = loadImage('hole.png');
+    holeImg = loadImage('hole_small.png');
     handImg = loadImage('hand.png');
 }
 
@@ -50,8 +50,6 @@ function setup() {
     canvas = createCanvas(windowWidth, windowHeight);
 
     layer = createGraphics(windowWidth, windowHeight);
-    pixelDensity(1);
-    layer.pixelDensity(pixelDensity());
 
     for (let i = 0; i < nBirds; i++) {
         const margin = 30;
